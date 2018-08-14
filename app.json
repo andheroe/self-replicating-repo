@@ -1,0 +1,31 @@
+{
+  "name": "Flask-Dance with GitHub",
+  "description": "Testing Flask-Dance's OAuth integration with GitHub",
+  "keywords": [
+    "oauth"
+  ],
+  "website": "https://github.com/singingwolfboy/flask-dance-github",
+  "repository": "https://github.com/singingwolfboy/flask-dance-github",
+  "env": {
+    "GITHUB_OAUTH_CLIENT_ID": {
+      "description": "The OAuth client ID for your application, assigned by GitHub",
+      "value": "client-id-goes-here"
+    },
+    "GITHUB_OAUTH_CLIENT_SECRET": {
+      "description": "The OAuth client secret for your application, assigned by GitHub",
+      "value": "client-secret-goes-here"
+    },
+    "GITHUB_USERNAME": {
+      "description": "The name of the GitHub user from whom the repo will be forked",
+      "value": "mykhaly"
+    },
+    "GITHUB_REPO": {
+      "description": "The name of the GitHub repository which will be forked",
+      "value": "self_replicating_repo"
+    },
+    "FLASK_SECRET_KEY": {
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "generator": "secret"
+    }
+  }
+}
