@@ -99,9 +99,9 @@ Run the following commands on your computer, inserting your values for variables
 (client id and client secret you should take from the Github applicationg you 
 registered on step 1)::
 
-    export GITHUB_OAUTH_CLIENT_ID YOU_SHOULD_INSERT_YOUR_VALUE_HERE
-    export GITHUB_OAUTH_CLIENT_SECRET YOU_SHOULD_INSERT_YOUR_VALUE_HERE
-    export OAUTHLIB_INSECURE_TRANSPORT 1
+    export GITHUB_OAUTH_CLIENT_ID=YOU_SHOULD_INSERT_YOUR_VALUE_HERE
+    export GITHUB_OAUTH_CLIENT_SECRET=YOU_SHOULD_INSERT_YOUR_VALUE_HERE
+    export OAUTHLIB_INSECURE_TRANSPORT=1
 
 
 Step 4: Run your app and login with GitHub!
@@ -110,11 +110,14 @@ Step 4: Run your app and login with GitHub!
 - Run the following command on your computer::
     python github.py
 
-- Go to http://localhost:5000/
+- Go to http://127.0.0.1:5000/
 
 - Log in to Github
 
 - Done! Now you have your own fork of this repo.
+
+Thanks to @singingwolfboy for his tutorial flask-dance-github, this code
+is massively borrowed from there.
 
 
 .. |heroku-deploy| image:: https://www.herokucdn.com/deploy/button.png

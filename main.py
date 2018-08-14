@@ -5,6 +5,7 @@ from flask_api import status
 from flask_dance.contrib.github import github, make_github_blueprint
 from werkzeug.contrib.fixers import ProxyFix
 
+
 app = Flask(__name__)
 app.wsgi_app = ProxyFix(app.wsgi_app)
 
@@ -40,12 +41,12 @@ def index():
 
     if not fork_resp.ok:
         if fork_resp.status_code == status.HTTP_404_NOT_FOUND:
-            return f"You are trying to fork your own repo or the repo does not exist. {host_username}/{repo_name}. " + \
-                   "user data: {}".format(user_resp.json())
+            return f"You are trying to fork your own repo or the repo does not exist."
+
         return "Something went wrong when trying to fork the repo. Try refreshing a page. " \
                "If it doesn't help - write to yurkamykhalchuk@gmail.com. "
 
-    return f"You have successfully cloned a repository. URL: {link_to_repo}"
+    return f"You have successfully forked a repository. URL: {link_to_repo}"
 
 
 if __name__ == "__main__":
