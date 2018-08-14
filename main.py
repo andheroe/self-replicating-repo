@@ -13,7 +13,7 @@ app.secret_key = os.environ.get("FLASK_SECRET_KEY", "youllnevercrackme")
 app.config["GITHUB_OAUTH_CLIENT_ID"] = os.environ.get("GITHUB_OAUTH_CLIENT_ID")
 app.config["GITHUB_OAUTH_CLIENT_SECRET"] = os.environ.get("GITHUB_OAUTH_CLIENT_SECRET")
 
-app.register_blueprint(blueprint=make_github_blueprint(),
+app.register_blueprint(blueprint=make_github_blueprint(scope='public_repo'),
                        url_prefix="/login")
 
 host_username = os.environ.get("GITHUB_USERNAME", 'mykhaly')
