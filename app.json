@@ -21,7 +21,7 @@
     },
     "GITHUB_REPO": {
       "description": "The name of the GitHub repository which will be forked",
-      "value": "self_replicating_repo"
+      "value": "self-replicating-repo"
     },
     "FLASK_SECRET_KEY": {
       "description": "A secret key for verifying the integrity of signed cookies.",

@@ -98,6 +98,7 @@ Step 3: Set environment variables
 Run the following commands on your computer, inserting your values for variables
 (client id and client secret you should take from the Github applicationg you 
 registered on step 1)::
+
     export GITHUB_OAUTH_CLIENT_ID YOU_SHOULD_INSERT_YOUR_VALUE_HERE
     export GITHUB_OAUTH_CLIENT_SECRET YOU_SHOULD_INSERT_YOUR_VALUE_HERE
     export OAUTHLIB_INSECURE_TRANSPORT 1

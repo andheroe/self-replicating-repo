@@ -17,13 +17,12 @@ app.register_blueprint(blueprint=make_github_blueprint(),
                        url_prefix="/login")
 
 host_username = os.environ.get("GITHUB_USERNAME", 'mykhaly')
-repo_name = os.environ.get("REPOSITORY_NAME", "flask-dance-github")
+repo_name = os.environ.get("REPOSITORY_NAME", "self-replicating-repo")
 
 
 def get_link_to_repo(username, repo):
     return f"https://github.com/{username}/{repo}"
 
-св 
 @app.route("/")
 def index():
     if not github.authorized:
