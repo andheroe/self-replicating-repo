@@ -47,17 +47,19 @@ Step 2: Get OAuth credentials from GitHub
 Step 3: Give OAuth credentials to your app on Heroku
 ----------------------------------------------------
 
-Take client ID and client secret from your GitHub application and fill the
-corresponding fields on Heroku site. Click the "Deploy app".
+- Take client ID and client secret from your GitHub application and fill the
+corresponding fields on Heroku site. 
+
+- Click the "Deploy app".
 
 Step 4: Visit your app and login with GitHub!
 ---------------------------------------------
 
-a) Click on the "View" button or visit the ``https://APPNAME.herokuapp.com``. 
+- Click on the "View" button or visit the ``https://APPNAME.herokuapp.com``. 
 
-b) Log in to Github.
+- Log in to Github.
 
-c) Done! Now you have your own fork of this repo.
+- Done! Now you have your own fork of this repo.
 
 Local Installation
 ``````````````````
@@ -85,8 +87,8 @@ Step 2: Install code and dependencies
 
 Run the following commands on your computer::
 
-    git clone https://github.com/mykhaly/self_replicating_repo.git
-    cd flask-dance-github
+    git clone https://github.com/mykhaly/self-replicating-repo.git
+    cd self-replicating-repo
     pip3 install virtualenv
     python3 -m venv venv
     . venv/bin/activate
@@ -116,7 +118,7 @@ Step 4: Run your app and login with GitHub!
 
 - Done! Now you have your own fork of this repo.
 
-Thanks to @singingwolfboy for his tutorial flask-dance-github, this code
+Thanks to @singingwolfboy for his tutorial flask-dance-github, code
 is massively borrowed from there.
 
 
