@@ -41,7 +41,7 @@ def index():
 
     if not fork_resp.ok:
         if fork_resp.status_code == status.HTTP_404_NOT_FOUND:
-            return f"You are trying to fork your own repo or the repo does not exist."
+            return f"You are trying to fork a repo that does not exist."
 
         return "Something went wrong when trying to fork the repo. Try refreshing a page. " \
                "If it doesn't help - write to yurkamykhalchuk@gmail.com. "
