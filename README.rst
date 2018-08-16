@@ -97,14 +97,16 @@ Run the following commands on your computer::
 Step 3: Set environment variables
 ---------------------------------
 
-Run the following commands on your computer, inserting your values for variables
-(client id and client secret you should take from the Github applicationg you 
-registered on step 1)::
+Run the following commands on your computer:
+
+- Client id and client secret you should take from the Github applicationg you 
+  registered on step 1; flask secret key is a phrase which will be used for 
+  signing cookies on server, you should not reveal it to your users::
 
     export GITHUB_OAUTH_CLIENT_ID=YOU_SHOULD_INSERT_YOUR_VALUE_HERE
     export GITHUB_OAUTH_CLIENT_SECRET=YOU_SHOULD_INSERT_YOUR_VALUE_HERE
+    export FLASK_SECRET_KEY=YOU_SHOULD_INSERT_YOUR_VALUE_HERE
     export OAUTHLIB_INSECURE_TRANSPORT=1
-
 
 Step 4: Run your app and login with GitHub!
 -------------------------------------------
@@ -117,6 +119,11 @@ Step 4: Run your app and login with GitHub!
 - Log in to Github
 
 - Done! Now you have your own fork of this repo.
+
+How this is working:
+1) User logs in using Github account
+2) Github OAuth application requests access to user's data
+3) The repository is forked to logged user's profile
 
 Thanks to @singingwolfboy for his tutorial flask-dance-github, code
 is massively borrowed from there.
