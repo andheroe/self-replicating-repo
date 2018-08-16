@@ -6,6 +6,8 @@ The code is located mainly in ``main.py`` all the other files
 in this repository are just configuration files. You can run this
 code locally, or deploy it to Heroku for free to have a personal instance.
 
+https://self-replicating-repo.herokuapp.com/
+
 Heroku Installation
 ```````````````````
 
