@@ -101,9 +101,10 @@ Step 3: Set environment variables
 
 Run the following commands on your computer:
 
-- Client id and client secret you should take from the Github applicationg you 
-  registered on step 1; flask secret key is a phrase which will be used for 
-  signing cookies on server, you should not reveal it to your users::
+- Take client id and client secret from the Github applicationg you 
+  registered on step 1; flask secret key is a phrase (like password) 
+  which will be used for checking cookies on server, you should not 
+  reveal it to your users::
 
     export GITHUB_OAUTH_CLIENT_ID=YOU_SHOULD_INSERT_YOUR_VALUE_HERE
     export GITHUB_OAUTH_CLIENT_SECRET=YOU_SHOULD_INSERT_YOUR_VALUE_HERE
@@ -114,6 +115,7 @@ Step 4: Run your app and login with GitHub!
 -------------------------------------------
 
 - Run the following command on your computer::
+
     python github.py
 
 - Go to http://127.0.0.1:5000/
