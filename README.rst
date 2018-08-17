@@ -125,9 +125,12 @@ Step 4: Run your app and login with GitHub!
 - Done! Now you have your own fork of this repo.
 
 How this is working:
-1) User logs in using Github account
-2) Github OAuth application requests access to user's data
-3) The repository is forked to logged user's profile
+
+- User logs in using Github account
+
+- Github OAuth application requests access to user's data
+
+- The repository is forked to logged user's profile
 
 Thanks to @singingwolfboy for his tutorial flask-dance-github, code
 is massively borrowed from there.
